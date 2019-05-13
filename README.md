@@ -1,4 +1,4 @@
-# CloudNodes-CDS-v2-Takeover
+# CloudNode-CDS-v2-Takeover
 Shell script to install a [Cloudnode Masternode]on a Linux server running Ubuntu 16.04.  
 This script will install **Cloudnode**.
 
