@@ -40,9 +40,9 @@ Alias Address Privkey TxHash Output_index
 
 ## To check the status in your VPS:
 ```
-cds-cli getinfo
-cds-cli masternode status
-cds-cli mnsync status
+cloudenode-cli getinfo
+cloudenode-cli masternode status
+cloudenode-cli mnsync status
 ```
 Also, if you want to check/start/stop **cds** , run one of the following commands as **root**:
 ```
