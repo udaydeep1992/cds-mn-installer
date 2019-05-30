@@ -1,13 +1,13 @@
 #!/bin/bash
 
 TMP_FOLDER=$(mktemp -d)
-CONFIG_FILE='cloudnode.conf'
-CONFIGFOLDER='/root/.cloudnode'
-COIN_DAEMON='/usr/local/bin/cloudnoded'
-COIN_CLI='/usr/local/bin/cloudnode-cli'
+CONFIG_FILE='cloudenode.conf'
+CONFIGFOLDER='/root/.cloudenode'
+COIN_DAEMON='/usr/local/bin/cloudenoded'
+COIN_CLI='/usr/local/bin/cloudenode-cli'
 COIN_REPO='https://github.com/udaydeep1992/cloudnode-v2/releases/download/v2/cloudnode-v2-linux64.tar.gz'
-COIN_NAME='CLOUDNODE'
-COIN_PORT=3718
+COIN_NAME='CLOUDENODE'
+COIN_PORT=7070
 
 
 NODEIP=$(curl -s4 icanhazip.com)
@@ -47,7 +47,7 @@ echo -e "${RED}"
 sudo ufw --force enable
 echo -e "${NC}"
 
-#Generating Random Password for cloudnoded RPC
+#Generating Random Password for cloudenoded RPC
 rpcpassword=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
 
 #Create 2GB swap file
@@ -78,7 +78,7 @@ function compile_node() {
   COIN_ZIP=$(echo $COIN_REPO | awk -F'/' '{print $NF}')
   tar xvzf $COIN_ZIP >/dev/null 2>&1
   compile_error
-  cp cloudnode* /usr/local/bin
+  cp cloudenode* /usr/local/bin
   compile_error
   strip $COIN_DAEMON $COIN_CLI
   cd -
@@ -331,7 +331,7 @@ function important_information() {
   echo -e "${RED}Sentinel${NC} is installed in ${RED}$CONFIGFOLDER/sentinel${NC}"
   echo -e "Sentinel logs is: ${RED}$CONFIGFOLDER/sentinel.log${NC}"
  fi
- echo -e "Check if $COIN_NAME is running by using the following command: ${RED}systemctl status CLOUDNODE.service${NC}"
+ echo -e "Check if $COIN_NAME is running by using the following command: ${RED}systemctl status CLOUDENODE.service${NC}"
  echo -e "================================================================================================================================"
 }
 
