@@ -24,6 +24,7 @@ sudo apt-get -y dist-upgrade
 sudo do-release-upgrade -d
 sudo apt-get -y autoremove
 sudo apt-get install curl
+sudo apt-get install net-tools
 sudo apt-get -y install wget nano htop jq
 sudo apt-get -y install libzmq3-dev
 sudo apt-get -y install libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev
