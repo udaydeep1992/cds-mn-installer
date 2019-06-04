@@ -18,6 +18,7 @@ GREEN='\e[932'
 NC='\033[0m'
 
 # update packages and upgrade Ubuntu
+sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
 sudo apt-get -y autoremove
