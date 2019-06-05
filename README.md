@@ -1,4 +1,4 @@
-# CloudNode-CDS-v2-Takeover
+# CloudNode-CDS-v2
 Shell script to install a [Cloudnode Masternode]on a Linux server running Ubuntu 16.04.  
 This script will install **Cloudnode**.
 
@@ -16,7 +16,7 @@ This script will install **Cloudnode**.
 After the MN is up and running, you need to configure the desktop wallet accordingly. Here are the steps for Windows Wallet
 1. Open the Cloudnode Wallet.
 2. Go to RECEIVE and create a New Address: **MN1**
-3. Send **2100** **CDS** to **MN1**.
+3. Send **10000000** **CDS** to **MN1**.
 4. Wait for confirmations.
 5. Go to **Tools -> "Debug console - Console"**
 6. Type the following command: **masternode outputs**
