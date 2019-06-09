@@ -21,6 +21,7 @@ NC='\033[0m'
 sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
+sudo apt install ubuntu-release-upgrader-core
 sudo do-release-upgrade -d
 sudo apt-get -y autoremove
 sudo apt-get -y install curl
