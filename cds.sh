@@ -5,7 +5,7 @@ CONFIG_FILE='cloudenode.conf'
 CONFIGFOLDER='/root/.cloudenode'
 COIN_DAEMON='/usr/local/bin/cloudenoded'
 COIN_CLI='/usr/local/bin/cloudenode-cli'
-COIN_REPO='https://github.com/udaydeep1992/cloudnode-v2/releases/download/v2/cloudnode-v2-linux64.tar.gz'
+COIN_REPO='https://github.com/udaydeep1992/cloudnode-v2/releases/download/master/cloudnode-v2-linux64.tar.gz'
 COIN_NAME='CLOUDENODE'
 COIN_PORT=7070
 
